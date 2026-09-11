@@ -1,0 +1,15 @@
+{
+  "behavior": "unverified",
+  "decision": "complete",
+  "fallback_reasons": [],
+  "potentially_impacted": [
+    "action",
+    "agent",
+    "field"
+  ],
+  "selected_tests": [
+    "agent_test"
+  ],
+  "unmapped_impacted": [],
+  "unresolved": []
+}

@@ -1,0 +1,14 @@
+{
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "test_tool.py",
+    "-v"
+  ],
+  "date": "2026-09-11",
+  "fixture_version": 3,
+  "exit_code": 0,
+  "stdout": "",
+  "stderr": "test_cli_decisions (__main__.Tests.test_cli_decisions) ... ok\ntest_frozen_oracles (__main__.Tests.test_frozen_oracles) ... ok\ntest_malformed_cli (__main__.Tests.test_malformed_cli) ... ok\n\n----------------------------------------------------------------------\nRan 3 tests in 0.358s\n\nOK\n",
+  "context": "v3 corrected regression fixtures; same fixed implementation",
+  "tool_sha256": "b1fdec7ba2015d643dee03c98a085334edd2d29ca13b20eaf1adf84f5d8d3bb6"
+}

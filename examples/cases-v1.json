@@ -1,0 +1,131 @@
+[
+  {
+    "expected": {
+      "behavior": "unverified",
+      "decision": "complete",
+      "potentially_impacted": [
+        "action",
+        "agent",
+        "field"
+      ],
+      "selected_tests": [
+        "agent_test"
+      ],
+      "unresolved": []
+    },
+    "input": {
+      "changed": [
+        "field"
+      ],
+      "edges": [
+        [
+          "action",
+          "field"
+        ],
+        [
+          "agent",
+          "action"
+        ]
+      ],
+      "nodes": [
+        "field",
+        "action",
+        "agent",
+        "unrelated"
+      ],
+      "tests": {
+        "agent_test": [
+          "agent"
+        ],
+        "other_test": [
+          "unrelated"
+        ]
+      }
+    },
+    "name": "reference"
+  },
+  {
+    "expected": {
+      "behavior": "unverified",
+      "decision": "complete",
+      "potentially_impacted": [
+        "unrelated"
+      ],
+      "selected_tests": [
+        "other_test"
+      ],
+      "unresolved": []
+    },
+    "input": {
+      "changed": [
+        "unrelated"
+      ],
+      "edges": [
+        [
+          "action",
+          "field"
+        ],
+        [
+          "agent",
+          "action"
+        ]
+      ],
+      "nodes": [
+        "field",
+        "action",
+        "agent",
+        "unrelated"
+      ],
+      "tests": {
+        "agent_test": [
+          "agent"
+        ],
+        "other_test": [
+          "unrelated"
+        ]
+      }
+    },
+    "name": "control"
+  },
+  {
+    "expected": {
+      "behavior": "unverified",
+      "decision": "unknown",
+      "potentially_impacted": [],
+      "selected_tests": [],
+      "unresolved": [
+        "opaque"
+      ]
+    },
+    "input": {
+      "changed": [
+        "opaque"
+      ],
+      "edges": [
+        [
+          "action",
+          "field"
+        ],
+        [
+          "agent",
+          "action"
+        ]
+      ],
+      "nodes": [
+        "field",
+        "action",
+        "agent",
+        "unrelated"
+      ],
+      "tests": {
+        "agent_test": [
+          "agent"
+        ],
+        "other_test": [
+          "unrelated"
+        ]
+      }
+    },
+    "name": "unknown_or_refusal"
+  }
+]

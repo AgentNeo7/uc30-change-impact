@@ -1,0 +1,43 @@
+{
+  "checked_utc": "2026-09-11T06:46:54.127761+00:00",
+  "passed": true,
+  "commands": [
+    {
+      "command": [
+        "/opt/homebrew/opt/python@3.13/bin/python3.13",
+        "-I",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        ".",
+        "-p",
+        "test_tool.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "test_bounded_json_and_duplicate_keys (test_tool.Tests.test_bounded_json_and_duplicate_keys) ... ok\ntest_cli_decisions (test_tool.Tests.test_cli_decisions) ... ok\ntest_frozen_oracles (test_tool.Tests.test_frozen_oracles) ... ok\ntest_malformed_cli (test_tool.Tests.test_malformed_cli) ... ok\ntest_output_cannot_overwrite_input (test_tool.Tests.test_output_cannot_overwrite_input) ... ok\n\n----------------------------------------------------------------------\nRan 5 tests in 0.603s\n\nOK\n",
+      "seconds": 0.6644251249963418
+    },
+    {
+      "command": [
+        "/opt/homebrew/opt/python@3.13/bin/python3.13",
+        "-I",
+        "tool.py",
+        "--input",
+        "examples/input.json",
+        "--output",
+        "isolated-result.json"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "",
+      "seconds": 0.02704366692341864
+    }
+  ],
+  "test_count": 5,
+  "example_passed": true,
+  "source_sha256": "49ec965e280bbeaebc1d4f7f809277f8380bf36d48caf3107991edf7cb4d4130",
+  "scope": "Standalone local prototype on original synthetic cases; not full catalog acceptance"
+}

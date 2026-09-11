@@ -1,0 +1,46 @@
+{
+  "id": "UC30",
+  "name": "AgentChangeImpact",
+  "status": "bounded_local_prototype_checked",
+  "scope": "Declared dependency test selection; no novel method",
+  "original_requirements_status": "partial/unmet; no full release acceptance",
+  "blockers": [
+    "No native Salesforce parser or behavior tests in this standalone utility. Graph direction is consumer \u2192 dependency. Reachability is potential impact, not observed regression. Prior novel-method no-build remains.",
+    "Domain owner, independent evaluation, native integration, maintenance owner and license/release review remain open."
+  ],
+  "source_urls": [
+    "https://github.com/forcedotcom/sf-skills/blob/main/skills/agentforce-architecture-analyze/SKILL.md"
+  ],
+  "source_evidence": [
+    {
+      "url": "https://github.com/forcedotcom/sf-skills/blob/main/skills/agentforce-architecture-analyze/SKILL.md",
+      "accessed": "2026-09-11",
+      "published_or_updated": "unknown/not exposed",
+      "version": "live docs or main branch; unpinned",
+      "status": "externally reported",
+      "paraphrase": "Official architecture analysis already exists; declared graph reachability is established, with no new-method claim."
+    }
+  ],
+  "research_gate": "Narrow synthetic entry only; no customer-demand or differentiation evidence.",
+  "comparative_gate": "no-build for new method: prior parity retained",
+  "checks": {
+    "command": "python3.13 test_tool.py -v",
+    "outcome": "5 test methods passed; 9 frozen regression scenarios plus 4 malformed CLI cases; bounded I/O and overwrite regressions passed",
+    "evidence": "checks.json"
+  },
+  "claim_status": "simulated",
+  "attribution": "AI authored code, fixtures and documentation. Balaji supplied execution priorities; further human contributions not established.",
+  "license": "MIT for original code; upstream documentation retains its own terms",
+  "publication": "not published; publication and license review by parent",
+  "correctness_amendment": "2026-09-11: full-suite fallback for unresolved or unmapped scope; empty test universe unknown",
+  "io_limits": {
+    "bytes": 2000000,
+    "depth": 32,
+    "container_entries": 1000,
+    "duplicate_keys": "rejected",
+    "nonfinite_numbers": "rejected",
+    "input_overwrite": "rejected"
+  },
+  "source_publication": "Authorized experimental source preview; full catalog release gates not met",
+  "full_requirements_complete": false
+}

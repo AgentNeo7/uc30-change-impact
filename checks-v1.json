@@ -1,0 +1,20 @@
+{
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "test_tool.py",
+    "-v"
+  ],
+  "exit_code": 0,
+  "stdout": "",
+  "stderr": "test_cli_decisions (__main__.Tests.test_cli_decisions) ... ok\ntest_frozen_oracles (__main__.Tests.test_frozen_oracles) ... ok\ntest_malformed_cli (__main__.Tests.test_malformed_cli) ... ok\n\n----------------------------------------------------------------------\nRan 3 tests in 0.257s\n\nOK\n",
+  "evidence": "observed local checks on simulated fixtures",
+  "date": "2026-09-11",
+  "tool_sha256": "c168eb57e397ef0bca5e4050f390e2a0541ad4b9cd041cf6fb576f88bf1e618d",
+  "python": "3.13.14 (main, Jun 10 2026, 12:24:04) [Clang 21.0.0 (clang-2100.0.123.102)]",
+  "standalone_copy": {
+    "exit_code": 0,
+    "expected_report_matches": true,
+    "source_files_unchanged": true
+  },
+  "scope": "local prototype checks only, not original acceptance"
+}

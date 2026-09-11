@@ -1,0 +1,14 @@
+{
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "test_tool.py",
+    "-v"
+  ],
+  "date": "2026-09-11",
+  "version": 2,
+  "exit_code": 1,
+  "stdout": "",
+  "stderr": "test_cli_decisions (__main__.Tests.test_cli_decisions) ... FAIL\ntest_frozen_oracles (__main__.Tests.test_frozen_oracles) ... \n  test_frozen_oracles (__main__.Tests.test_frozen_oracles) (case='known_no_change') ... FAIL\ntest_malformed_cli (__main__.Tests.test_malformed_cli) ... ok\n\n======================================================================\nFAIL: test_cli_decisions (__main__.Tests.test_cli_decisions)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"./tools/uc30/test_tool.py\", line 18, in test_cli_decisions\n    self.assertEqual(json.loads((p/'out.json').read_text()),case['expected'])\n    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: {'beh[30 chars]n': 'unknown', 'fallback_reasons': ['empty_tes[101 chars]: []} != {'beh[30 chars]n': 'complete', 'fallback_reasons': [], 'poten[81 chars]: []}\n  {'behavior': 'unverified',\n-  'decision': 'unknown',\n-  'fallback_reasons': ['empty_test_universe'],\n+  'decision': 'complete',\n+  'fallback_reasons': [],\n   'potentially_impacted': [],\n   'selected_tests': [],\n   'unmapped_impacted': [],\n   'unresolved': []}\n\n======================================================================\nFAIL: test_frozen_oracles (__main__.Tests.test_frozen_oracles) (case='known_no_change')\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"./tools/uc30/test_tool.py\", line 10, in test_frozen_oracles\n    with self.subTest(case=case['name']): self.assertEqual(tool.analyze(case['input']),case['expected'])\n                                          ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: {'decision': 'unknown', 'potentially_impact[139 chars]: []} != {'behavior': 'unverified', 'decision': 'com[119 chars]: []}\n  {'behavior': 'unverified',\n-  'decision': 'unknown',\n-  'fallback_reasons': ['empty_test_universe'],\n+  'decision': 'complete',\n+  'fallback_reasons': [],\n   'potentially_impacted': [],\n   'selected_tests': [],\n   'unmapped_impacted': [],\n   'unresolved': []}\n\n----------------------------------------------------------------------\nRan 3 tests in 0.337s\n\nFAILED (failures=2)\n",
+  "context": "v2 regression contract after fix",
+  "tool_sha256": "b1fdec7ba2015d643dee03c98a085334edd2d29ca13b20eaf1adf84f5d8d3bb6"
+}

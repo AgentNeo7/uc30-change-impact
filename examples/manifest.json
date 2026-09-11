@@ -1,0 +1,9 @@
+{
+  "version": 3,
+  "date": "2026-09-11",
+  "cases_sha256": "0f28f00e33158d1a04d0afaacdbeda02cfc54ffab7433763d32464f93e77c80b",
+  "amendment": "Correct fixture authoring alias: known_no_change accidentally inherited empty tests when creating empty_universe_even_no_change. Restore its two declared test mappings; expected complete unchanged. v2 failed output and files preserved. No implementation change for this correction.",
+  "v1_preserved": "manifest-v1.json",
+  "v2_preserved": "manifest-v2.json",
+  "authorship": "AI synthetic internal fixtures"
+}

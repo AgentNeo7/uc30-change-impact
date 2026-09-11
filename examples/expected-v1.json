@@ -1,0 +1,13 @@
+{
+  "behavior": "unverified",
+  "decision": "complete",
+  "potentially_impacted": [
+    "action",
+    "agent",
+    "field"
+  ],
+  "selected_tests": [
+    "agent_test"
+  ],
+  "unresolved": []
+}

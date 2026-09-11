@@ -1,0 +1,412 @@
+[
+  {
+    "expected": {
+      "behavior": "unverified",
+      "decision": "complete",
+      "fallback_reasons": [],
+      "potentially_impacted": [
+        "action",
+        "agent",
+        "field"
+      ],
+      "selected_tests": [
+        "agent_test"
+      ],
+      "unmapped_impacted": [],
+      "unresolved": []
+    },
+    "input": {
+      "changed": [
+        "field"
+      ],
+      "edges": [
+        [
+          "action",
+          "field"
+        ],
+        [
+          "agent",
+          "action"
+        ]
+      ],
+      "nodes": [
+        "field",
+        "action",
+        "agent",
+        "unrelated"
+      ],
+      "tests": {
+        "agent_test": [
+          "agent"
+        ],
+        "other_test": [
+          "unrelated"
+        ]
+      }
+    },
+    "name": "reference"
+  },
+  {
+    "expected": {
+      "behavior": "unverified",
+      "decision": "complete",
+      "fallback_reasons": [],
+      "potentially_impacted": [
+        "unrelated"
+      ],
+      "selected_tests": [
+        "other_test"
+      ],
+      "unmapped_impacted": [],
+      "unresolved": []
+    },
+    "input": {
+      "changed": [
+        "unrelated"
+      ],
+      "edges": [
+        [
+          "action",
+          "field"
+        ],
+        [
+          "agent",
+          "action"
+        ]
+      ],
+      "nodes": [
+        "field",
+        "action",
+        "agent",
+        "unrelated"
+      ],
+      "tests": {
+        "agent_test": [
+          "agent"
+        ],
+        "other_test": [
+          "unrelated"
+        ]
+      }
+    },
+    "name": "control"
+  },
+  {
+    "expected": {
+      "behavior": "unverified",
+      "decision": "unknown",
+      "fallback_reasons": [
+        "unresolved_references"
+      ],
+      "potentially_impacted": [],
+      "selected_tests": [
+        "agent_test",
+        "other_test"
+      ],
+      "unmapped_impacted": [],
+      "unresolved": [
+        "opaque"
+      ]
+    },
+    "input": {
+      "changed": [
+        "opaque"
+      ],
+      "edges": [
+        [
+          "action",
+          "field"
+        ],
+        [
+          "agent",
+          "action"
+        ]
+      ],
+      "nodes": [
+        "field",
+        "action",
+        "agent",
+        "unrelated"
+      ],
+      "tests": {
+        "agent_test": [
+          "agent"
+        ],
+        "other_test": [
+          "unrelated"
+        ]
+      }
+    },
+    "name": "unknown_or_refusal"
+  },
+  {
+    "expected": {
+      "behavior": "unverified",
+      "decision": "complete",
+      "fallback_reasons": [],
+      "potentially_impacted": [
+        "action",
+        "agent",
+        "field"
+      ],
+      "selected_tests": [
+        "agent_test"
+      ],
+      "unmapped_impacted": [],
+      "unresolved": []
+    },
+    "input": {
+      "changed": [
+        "field"
+      ],
+      "edges": [
+        [
+          "action",
+          "field"
+        ],
+        [
+          "agent",
+          "action"
+        ],
+        [
+          "field",
+          "agent"
+        ]
+      ],
+      "nodes": [
+        "field",
+        "action",
+        "agent",
+        "unrelated"
+      ],
+      "tests": {
+        "agent_test": [
+          "agent"
+        ],
+        "other_test": [
+          "unrelated"
+        ]
+      }
+    },
+    "name": "cycle_mapped"
+  },
+  {
+    "expected": {
+      "behavior": "unverified",
+      "decision": "unknown",
+      "fallback_reasons": [
+        "unmapped_impacted"
+      ],
+      "potentially_impacted": [
+        "action",
+        "agent",
+        "field"
+      ],
+      "selected_tests": [
+        "other_test"
+      ],
+      "unmapped_impacted": [
+        "action",
+        "agent",
+        "field"
+      ],
+      "unresolved": []
+    },
+    "input": {
+      "changed": [
+        "field"
+      ],
+      "edges": [
+        [
+          "action",
+          "field"
+        ],
+        [
+          "agent",
+          "action"
+        ]
+      ],
+      "nodes": [
+        "field",
+        "action",
+        "agent",
+        "unrelated"
+      ],
+      "tests": {
+        "other_test": [
+          "unrelated"
+        ]
+      }
+    },
+    "name": "unmapped_change_full_suite"
+  },
+  {
+    "expected": {
+      "behavior": "unverified",
+      "decision": "unknown",
+      "fallback_reasons": [
+        "empty_test_universe",
+        "unmapped_impacted"
+      ],
+      "potentially_impacted": [
+        "action",
+        "agent",
+        "field"
+      ],
+      "selected_tests": [],
+      "unmapped_impacted": [
+        "action",
+        "agent",
+        "field"
+      ],
+      "unresolved": []
+    },
+    "input": {
+      "changed": [
+        "field"
+      ],
+      "edges": [
+        [
+          "action",
+          "field"
+        ],
+        [
+          "agent",
+          "action"
+        ]
+      ],
+      "nodes": [
+        "field",
+        "action",
+        "agent",
+        "unrelated"
+      ],
+      "tests": {}
+    },
+    "name": "empty_test_universe"
+  },
+  {
+    "expected": {
+      "behavior": "unverified",
+      "decision": "unknown",
+      "fallback_reasons": [
+        "unmapped_impacted"
+      ],
+      "potentially_impacted": [
+        "action",
+        "agent",
+        "field",
+        "unmapped_branch"
+      ],
+      "selected_tests": [
+        "agent_test",
+        "other_test"
+      ],
+      "unmapped_impacted": [
+        "unmapped_branch"
+      ],
+      "unresolved": []
+    },
+    "input": {
+      "changed": [
+        "field"
+      ],
+      "edges": [
+        [
+          "action",
+          "field"
+        ],
+        [
+          "agent",
+          "action"
+        ],
+        [
+          "unmapped_branch",
+          "field"
+        ]
+      ],
+      "nodes": [
+        "field",
+        "action",
+        "agent",
+        "unrelated",
+        "unmapped_branch"
+      ],
+      "tests": {
+        "agent_test": [
+          "agent"
+        ],
+        "other_test": [
+          "unrelated"
+        ]
+      }
+    },
+    "name": "partly_mapped_branch"
+  },
+  {
+    "expected": {
+      "behavior": "unverified",
+      "decision": "complete",
+      "fallback_reasons": [],
+      "potentially_impacted": [],
+      "selected_tests": [],
+      "unmapped_impacted": [],
+      "unresolved": []
+    },
+    "input": {
+      "changed": [],
+      "edges": [
+        [
+          "action",
+          "field"
+        ],
+        [
+          "agent",
+          "action"
+        ]
+      ],
+      "nodes": [
+        "field",
+        "action",
+        "agent",
+        "unrelated"
+      ],
+      "tests": {}
+    },
+    "name": "known_no_change"
+  },
+  {
+    "expected": {
+      "behavior": "unverified",
+      "decision": "unknown",
+      "fallback_reasons": [
+        "empty_test_universe"
+      ],
+      "potentially_impacted": [],
+      "selected_tests": [],
+      "unmapped_impacted": [],
+      "unresolved": []
+    },
+    "input": {
+      "changed": [],
+      "edges": [
+        [
+          "action",
+          "field"
+        ],
+        [
+          "agent",
+          "action"
+        ]
+      ],
+      "nodes": [
+        "field",
+        "action",
+        "agent",
+        "unrelated"
+      ],
+      "tests": {}
+    },
+    "name": "empty_universe_even_no_change"
+  }
+]

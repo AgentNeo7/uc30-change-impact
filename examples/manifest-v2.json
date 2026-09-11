@@ -1,0 +1,9 @@
+{
+  "version": 2,
+  "date": "2026-09-11",
+  "amendment_frozen_before_fix": true,
+  "v1_preserved": "manifest-v1.json",
+  "authorship": "AI-authored synthetic regression cases; internal checks",
+  "cases_sha256": "b103235e9ab18a108ce7046ee6d2c1e8a0df449e064ce614739871b4f67ee5d9",
+  "amendment": "Unknown references, an unmapped impacted node or an empty test universe require explicit fallback. Mapping covers a node only if a mapped consumer transitively depends on it. Full-suite selection means all declared test IDs; empty universe stays unknown."
+}

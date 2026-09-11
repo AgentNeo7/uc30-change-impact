@@ -1,0 +1,20 @@
+{
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "test_tool.py",
+    "-v"
+  ],
+  "date": "2026-09-11",
+  "exit_code": 0,
+  "stdout": "",
+  "stderr": "test_bounded_json_and_duplicate_keys (__main__.Tests.test_bounded_json_and_duplicate_keys) ... ok\ntest_cli_decisions (__main__.Tests.test_cli_decisions) ... ok\ntest_frozen_oracles (__main__.Tests.test_frozen_oracles) ... ok\ntest_malformed_cli (__main__.Tests.test_malformed_cli) ... ok\ntest_output_cannot_overwrite_input (__main__.Tests.test_output_cannot_overwrite_input) ... ok\n\n----------------------------------------------------------------------\nRan 5 tests in 0.611s\n\nOK\n",
+  "context": "bounded CLI hardening; algorithms and frozen fixtures unchanged",
+  "tool_sha256": "49ec965e280bbeaebc1d4f7f809277f8380bf36d48caf3107991edf7cb4d4130",
+  "source_hashes": {
+    "tool.py": "49ec965e280bbeaebc1d4f7f809277f8380bf36d48caf3107991edf7cb4d4130",
+    "test_tool.py": "8a273bf9596d54eea166fb9e52b81ae7d3678c1930f044263b08537e1d476c91",
+    "examples/cases.json": "0f28f00e33158d1a04d0afaacdbeda02cfc54ffab7433763d32464f93e77c80b"
+  },
+  "previous_checks": "checks-before-io-hardening.json",
+  "python": "3.13.14 (main, Jun 10 2026, 12:24:04) [Clang 21.0.0 (clang-2100.0.123.102)]"
+}

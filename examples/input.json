@@ -1,0 +1,29 @@
+{
+  "changed": [
+    "field"
+  ],
+  "edges": [
+    [
+      "action",
+      "field"
+    ],
+    [
+      "agent",
+      "action"
+    ]
+  ],
+  "nodes": [
+    "field",
+    "action",
+    "agent",
+    "unrelated"
+  ],
+  "tests": {
+    "agent_test": [
+      "agent"
+    ],
+    "other_test": [
+      "unrelated"
+    ]
+  }
+}
