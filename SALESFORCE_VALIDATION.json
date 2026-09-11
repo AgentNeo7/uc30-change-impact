@@ -1,0 +1,13 @@
+{
+  "platform": "Salesforce",
+  "targetApi": "64.0",
+  "nativeDryRun": "passed",
+  "nativeTestsCompleted": 1,
+  "nativeTestErrors": 0,
+  "nativeTestClasses": [
+    "UC30_ReviewActionTest"
+  ],
+  "deploymentPersisted": false,
+  "evidence_status": "observed",
+  "fullAcceptanceComplete": false
+}

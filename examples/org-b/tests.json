@@ -1,0 +1,17 @@
+{
+  "tests": [
+    {
+      "id": "UC30_ServiceActionTest",
+      "components": [
+        "Flow:UC30_ServiceFlow"
+      ]
+    },
+    {
+      "id": "UnrelatedControlTest",
+      "components": [
+        "Flow:UnrelatedControl"
+      ]
+    }
+  ],
+  "fixture_only": "UnrelatedControlTest is an offline mapping label, not included for native execution"
+}

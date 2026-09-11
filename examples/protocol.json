@@ -1,0 +1,11 @@
+{
+  "frozen_before_implementation": true,
+  "provenance": "Original AI-authored synthetic Salesforce DX metadata; internal controls only",
+  "input": "Two org schemas with different custom object, field, Flow and Apex API names",
+  "baseline": "All declared Apex test classes; metadata is not executed in this offline comparison",
+  "hypothesis": "Import explicit Salesforce Flow-to-field, subflow and Apex action references without manually supplying graph edges; preserve a full-suite fallback on unsupported impact",
+  "controls": ["referenced required field change", "unrelated field change", "cosmetic XML change", "unknown Flow action type", "unmapped changed component", "malformed XML", "missing snapshot", "duplicate identity", "empty declared suite", "changed Apex body"],
+  "metrics": ["manually authored graph edges eliminated", "known affected test IDs retained", "declared test IDs selected versus all"],
+  "native_wall_time_and_test_savings": "not measured",
+  "differentiation": "not established; conventional graph traversal"
+}

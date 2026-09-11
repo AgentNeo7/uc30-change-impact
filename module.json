@@ -1,0 +1,65 @@
+{
+  "id": "UC30",
+  "name": "Salesforce AgentChangeImpact",
+  "platform": "Salesforce",
+  "scope": "Extract explicit Salesforce Flow dependencies and classify DX changes with conservative test mapping.",
+  "requirements": [
+    {
+      "id": "UC30-R01",
+      "acceptance": "Graph includes unresolved references and source hashes.",
+      "coverage": "Parse real DX Flow, custom fields, class source and hashes in two configurations.",
+      "blocker": "Full original acceptance needs native validation, broader supported metadata, independently reviewed edges/oracles and representative workloads.",
+      "status": "partial"
+    },
+    {
+      "id": "UC30-R02",
+      "acceptance": "Cosmetic diffs are separated from potentially relevant semantic changes.",
+      "coverage": "Canonical XML diff and conservative Apex-body changes; unsupported metadata unknown.",
+      "blocker": "Full original acceptance needs native validation, broader supported metadata, independently reviewed edges/oracles and representative workloads.",
+      "status": "partial"
+    },
+    {
+      "id": "UC30-R03",
+      "acceptance": "Static reachability is labeled potential impact, not proven changed behavior.",
+      "coverage": "Source-linked reverse traversal on actual Flow subflow/action/custom-field references.",
+      "blocker": "Full original acceptance needs native validation, broader supported metadata, independently reviewed edges/oracles and representative workloads.",
+      "status": "partial"
+    },
+    {
+      "id": "UC30-R04",
+      "acceptance": "The report separates untested risk from observed regression.",
+      "coverage": "Existing test class mapping with conservative full-suite fallback; native tests pending.",
+      "blocker": "Full original acceptance needs native validation, broader supported metadata, independently reviewed edges/oracles and representative workloads.",
+      "status": "partial"
+    },
+    {
+      "id": "UC30-R05",
+      "acceptance": "A team can reproduce the finding and compare value against existing impact tools.",
+      "coverage": "Standalone Node CLI, DX deployment source and benchmark evidence.",
+      "blocker": "Full original acceptance needs native validation, broader supported metadata, independently reviewed edges/oracles and representative workloads.",
+      "status": "partial"
+    }
+  ],
+  "blockers": [
+    "Scoped metadata compilation and unit tests passed; broader integration, denied-user scenarios, actual domain policies and independent evaluation remain incomplete.",
+    "Agentforce configuration, dynamic Apex and comprehensive permissions dependencies unsupported.",
+    "No independent evaluation or differentiated-method advantage demonstrated."
+  ],
+  "native_tests": [
+    "UC30_ReviewActionTest"
+  ],
+  "commands": [
+    "npm ci --ignore-scripts",
+    "npm test",
+    "npm run example"
+  ],
+  "status": "scoped_native_validated",
+  "full_acceptance_complete": false,
+  "native_validation": {
+    "status": "passed",
+    "mode": "dry-run",
+    "tests_completed": 1,
+    "persisted_deployment": false,
+    "scope": "one Developer org; scoped unit tests and supplied metadata only"
+  }
+}

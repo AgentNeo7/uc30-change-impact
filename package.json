@@ -1,0 +1,1 @@
+{"name":"salesforce-change-impact","version":"0.2.0","private":true,"type":"module","engines":{"node":">=22"},"scripts":{"test":"node --test","example":"node src/cli.mjs --base examples/org-a/base --head examples/org-a/head --tests examples/org-a/tests.json"},"dependencies":{"fast-xml-parser":"5.11.1"}}

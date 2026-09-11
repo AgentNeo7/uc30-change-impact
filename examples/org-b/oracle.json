@@ -1,0 +1,12 @@
+{
+  "changes": [
+    "CustomField:UC30_Service__c.State__c"
+  ],
+  "selectedTests": [
+    "UC30_ServiceActionTest"
+  ],
+  "fullSuiteFallback": false,
+  "knownAffectedTests": [
+    "UC30_ServiceActionTest"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "changes": [
+    "CustomField:UC30_Review__c.Decision__c"
+  ],
+  "selectedTests": [
+    "UC30_ReviewActionTest"
+  ],
+  "fullSuiteFallback": false,
+  "knownAffectedTests": [
+    "UC30_ReviewActionTest"
+  ]
+}
